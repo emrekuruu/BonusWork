@@ -5,6 +5,8 @@
 #include <iostream>
 #include "LinkedList.h"
 using namespace std;
+
+
 void LinkedList::insertAtBeginning(int value) {
 
 Node* temp = new Node();
@@ -126,6 +128,5 @@ if(head->next==0){
     Node* temp = head->next;
     temp->next=head;
     head->next=0;
-
 }
 
