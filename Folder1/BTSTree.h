@@ -18,38 +18,39 @@ class BTSTree {
 public:
 
     // a pointer to the root of the binary tree
-    TreeNode* root = 0;
+    TreeNode *root = 0;
 
     // takes a value and insert it according to bts conditions
-TreeNode* insert(int value, TreeNode* root);
+    TreeNode *insert(int value, TreeNode *root);
 
 // takes a value and return true if the tree contains this value
-bool Search(int value, TreeNode* root);
+    bool Search(int value, TreeNode *root);
 
 // returns the min value in a bts value
-int Min();
+    int Min();
 
 // returns the min with a recursion
-int  MinRecursion(TreeNode* root);
+    int MinRecursion(TreeNode *root);
 
 // returns the max value
-int Max();
+    int Max();
 
 // return the max with a recursive method
-int MaxRecursion(TreeNode* root);
+    int MaxRecursion(TreeNode *root);
 
 // constructor
     BTSTree();
 
     // takes a value and deletes the value if it is in the list
-TreeNode* Delete(TreeNode* root,int value);
+    TreeNode *Delete(TreeNode *root, int value);
 
 // prints the tree in order
-    void printInOrder(TreeNode* root);
+    void printInOrder(TreeNode *root);
 
     // returns the pointer of a root if it is in the tree
-TreeNode* Find(TreeNode* root, int value);
+    TreeNode *Find(TreeNode *root, int value);
 
-
+    TreeNode* GetSuccessor(TreeNode *root, int value);
+};
 
 #endif //BONUSWORK_BTSTREE_H

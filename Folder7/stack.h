@@ -5,7 +5,7 @@
 #ifndef BONUSWORK_STACK_H
 #define BONUSWORK_STACK_H
 
-#include "LinkedList.h"
+#include "../Folder4/LinkedList.h"
 
 using namespace std;
 

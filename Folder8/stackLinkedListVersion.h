@@ -4,7 +4,7 @@
 
 #ifndef BONUSWORK_STACKLINKEDLISTVERSION_H
 #define BONUSWORK_STACKLINKEDLISTVERSION_H
-#include "LinkedList.h"
+#include "../Folder4/LinkedList.h"
 using namespace std;
 
 class stackLinkedListVersion {

@@ -1,18 +1,18 @@
 #include <iostream>
-#include "LinkedList.h"
-#include "stack.h"
-#include "stackLinkedListVersion.h"
-#include "doubleLinked.h"
-#include "Queue.h"
-#include "QueueLinkedListVersion.h"
-#include "BTSTree.h"
-#include "BinaryTree.h"
+#include "Folder4/LinkedList.h"
+#include "Folder7/stack.h"
+#include "Folder8/stackLinkedListVersion.h"
+#include "Folder3/doubleLinked.h"
+#include "Folder5/Queue.h"
+#include "Folder6/QueueLinkedListVersion.h"
+#include "Folder1/BTSTree.h"
+#include "Folder2/BinaryTree.h"
 
 using namespace std;
 
 int main() {
 
-//THİS İS THE TESTİNG PART OF ALL MY LİNKED LİST METHODS NOT İNCLUDİNG DOUBLELİNKED
+
 /*
     LinkedList *list1 = new LinkedList();
     list1->fillList();
@@ -36,10 +36,10 @@ int main() {
     list1->reverseWithRecursion(list1->head);
     list1->print();
 */
-//END OF MY LİNKED LİST METHODS
 
 
-// START OF MY DOUBLELİNKED LİST METHODS
+
+
     /*
     doubleLinked* l2 = new doubleLinked();
     l2->insertAtStart(1);
@@ -55,11 +55,11 @@ int main() {
     cout<<" "<< endl;
     */
 
-//END OF MY DOUBLELİNKED LİST METHODS
 
 
 
-//START OF MY STACK METHODS İMPLEMENTED WİTH ARRAYS
+
+
 
 /*
 stack *s1 = new stack(5);
@@ -87,10 +87,6 @@ stack *s1 = new stack(5);
 
 */
 
-//END OF MY STACK METHODS IMPLEMENTED WİTH ARRAYS
-
-     // START OF STACK METHODS IMPLEMENTED WİTH LİNKED LİSTS
-
     /*
     stackLinkedListVersion *s1 = new stackLinkedListVersion();
     s1->push(1);
@@ -112,9 +108,9 @@ stack *s1 = new stack(5);
     s1->print();
     */
 
-    //END OF MY STACK METHODS İMPLEMENTED WİTH LİNKED LİSTS
 
-    // EXAMPLE REVERSİNG A LİNKED LİST WİTH A STACK
+
+    // EXAMPLE REVERSE A LIST
     /*
     LinkedList *list1 = new LinkedList();
     list1->fillList();
@@ -130,9 +126,6 @@ stack *s1 = new stack(5);
 
 
 
-
-
-    // START OF MY QUEUE METHODS İMPLEMENTED WİTH ARRAYS
     /*
    Queue* q1 = new Queue(10);
     q1->Enqueue(1);
@@ -153,10 +146,6 @@ stack *s1 = new stack(5);
     */
 
 
-    //END OF MY QUEUE METHODS İMPLEMENTED WİTH ARRAYS
-
-
-    // START OF MY QUEUE METHODS İMPLEMENTED WİTH LİNKED LİSTS
     /*
     QueueLinkedListVersion* q2 = new QueueLinkedListVersion();
     q2->Enqueue(1);
@@ -176,9 +165,7 @@ stack *s1 = new stack(5);
     cout<<" "<< endl;
     cout<<" "<< endl;
     */
-    //END OF MY QUEUE METHODS İMPLEMENTED WİTH LİNKED LİSTS
 
-    // START OF BİNARY SEARCH TREE METHPODS
     /*
     BTSTree* b1 = new BTSTree();
     b1->insert(100,b1->root);
@@ -199,9 +186,8 @@ stack *s1 = new stack(5);
     cout<<" "<< endl;
 
      */
-    // END
 
-    // START OF MY BINARY TREE METHODS
+
     /*
     BinaryTree* b2 = new BinaryTree();
     b2->insert(300,b2->root);

@@ -147,6 +147,8 @@ TreeNode *BTSTree::Find(TreeNode *root, int value) {
     return 0;
 }
 
+
+
 TreeNode *BTSTree::GetSuccessor(TreeNode *root, int value) {
     TreeNode* temp = Find(root,value);
     if(temp == 0) return 0;
