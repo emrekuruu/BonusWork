@@ -6,24 +6,38 @@
 #define BONUSWORK_BINARYTREE_H
 
 
-struct TreeNode{
+struct BinaryNode{
     int data;
-    TreeNode* left = 0;
-    TreeNode* right = 0;
+    BinaryNode* left = 0;
+    BinaryNode* right = 0;
 };
 
 class BinaryTree {
 public:
 
+    // a pointer to the root of the binary tree
+    BinaryNode* root = 0;
 
-    TreeNode* root = 0;
-    TreeNode* insert(int value, TreeNode* root);
+    // takes a value and inserts it according to my conditions
+    BinaryNode* insert(int value, BinaryNode* root);
+
+    // constructor
     BinaryTree();
-    int findHeight(TreeNode* root);
-    void printInLeverOrder(TreeNode* root);
-    void printPreOrder(TreeNode* root);
-    void printInOrder(TreeNode* root);
-    void printPostOrder(TreeNode* root);
+
+    // returns the height of the tree
+    int findHeight(BinaryNode* root);
+
+    // print the tree in level order
+    void printInLeverOrder(BinaryNode* root);
+
+    // prints the tree in pre order
+    void printPreOrder(BinaryNode* root);
+
+    // prints the tree in in order
+    void printInOrder(BinaryNode* root);
+
+    // prints the tree postorder
+    void printPostOrder(BinaryNode* root);
 
 
 };

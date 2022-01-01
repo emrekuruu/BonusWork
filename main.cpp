@@ -49,13 +49,12 @@ int main() {
     l2->insertAtStart(5);
     l2->insertAtStart(6);
     l2->insertAtEnd(10);
-
-
-
     l2->print();
     cout<<" "<< endl;
     l2->Reverseprint();
-     */
+    cout<<" "<< endl;
+    */
+
 //END OF MY DOUBLELİNKED LİST METHODS
 
 
@@ -116,7 +115,6 @@ stack *s1 = new stack(5);
     //END OF MY STACK METHODS İMPLEMENTED WİTH LİNKED LİSTS
 
     // EXAMPLE REVERSİNG A LİNKED LİST WİTH A STACK
-
     /*
     LinkedList *list1 = new LinkedList();
     list1->fillList();
@@ -125,7 +123,8 @@ stack *s1 = new stack(5);
     cout<<" "<<endl;
     s1->reverse(list1);
     list1->print();
-     */
+    cout<<" "<< endl;
+    */
 
     // END OF EXAMPLE
 
@@ -134,7 +133,6 @@ stack *s1 = new stack(5);
 
 
     // START OF MY QUEUE METHODS İMPLEMENTED WİTH ARRAYS
-
     /*
    Queue* q1 = new Queue(10);
     q1->Enqueue(1);
@@ -147,33 +145,37 @@ stack *s1 = new stack(5);
     q1->Enqueue(8);
     q1->Enqueue(9);
     q1->Enqueue(10);
-    // TEST1  q1->Enqueue(11);
+    //INPUT IS LARGER THAN QUEUE TEST q1->Enqueue(11);
     q1->Dequeue();
     q1->print();
+    cout<<" "<< endl;
+    cout<<" "<< endl;
     */
+
 
     //END OF MY QUEUE METHODS İMPLEMENTED WİTH ARRAYS
 
 
     // START OF MY QUEUE METHODS İMPLEMENTED WİTH LİNKED LİSTS
-
     /*
-    QueueLinkedListVersion* q1 = new QueueLinkedListVersion();
-    q1->Enqueue(1);
-    q1->Enqueue(2);
-    q1->Enqueue(3);
-    q1->Enqueue(4);
-    q1->Enqueue(5);
-    q1->Enqueue(6);
-    q1->Enqueue(7);
-    q1->Enqueue(8);
-    q1->Enqueue(9);
-    q1->Enqueue(10);
-    q1->print();
+    QueueLinkedListVersion* q2 = new QueueLinkedListVersion();
+    q2->Enqueue(1);
+    q2->Enqueue(2);
+    q2->Enqueue(3);
+    q2->Enqueue(4);
+    q2->Enqueue(5);
+    q2->Enqueue(6);
+    q2->Enqueue(7);
+    q2->Enqueue(8);
+    q2->Enqueue(9);
+    q2->Enqueue(10);
+    q2->print();
     cout<<" "<<endl;
-    q1->Dequeue();
-    q1->print();
-     */
+    q2->Dequeue();
+    q2->print();
+    cout<<" "<< endl;
+    cout<<" "<< endl;
+    */
     //END OF MY QUEUE METHODS İMPLEMENTED WİTH LİNKED LİSTS
 
     // START OF BİNARY SEARCH TREE METHPODS
@@ -189,12 +191,14 @@ stack *s1 = new stack(5);
     cout<<" "<<endl;
     b1->Delete(b1->root,100);
     b1->printInOrder(b1->root);
+    cout<<" "<< endl;
     if((b1->Search(7,b1->root))){
         cout<<"This number is in this list "<<endl;
     }
-    cout<<b1->GetSuccessor(b1->root,113)->data<<" ";
-    */
+    cout<<b1->GetSuccessor(b1->root,113)->data<<" "<<endl;
+    cout<<" "<< endl;
 
+     */
     // END
 
     // START OF MY BINARY TREE METHODS
@@ -213,8 +217,8 @@ stack *s1 = new stack(5);
     b2->printInOrder(b2->root);
     cout<<" "<<endl;
     b2->printPostOrder(b2->root);
-
     */
+
 
     //END
 

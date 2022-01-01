@@ -7,7 +7,7 @@
 #include "iostream"
 #include "queue"
 
-int BinaryTree::findHeight(TreeNode *root) {
+int BinaryTree::findHeight(BinaryNode *root) {
     if(root == 0) return -1;
     int leftSub = findHeight(root->left);
     int rightSub = findHeight(root->right);
@@ -18,8 +18,8 @@ BinaryTree::BinaryTree() {
 
 }
 
-TreeNode *BinaryTree::insert(int value, TreeNode *root) {
-    TreeNode* temp = new TreeNode();
+BinaryNode *BinaryTree::insert(int value, BinaryNode *root) {
+    BinaryNode* temp = new BinaryNode();
     temp->data= value;
     if (this->root == 0) this->root = temp;
 
@@ -36,10 +36,10 @@ TreeNode *BinaryTree::insert(int value, TreeNode *root) {
     return root;
 }
 
-void BinaryTree::printInLeverOrder(TreeNode *root){
+void BinaryTree::printInLeverOrder(BinaryNode *root){
 
 if(root == 0) return ;
-std::queue<TreeNode*> q1;
+std::queue<BinaryNode*> q1;
 q1.push(root);
 
 while(!(q1.empty())){
@@ -51,7 +51,7 @@ while(!(q1.empty())){
 
 }
 //DLR
-void BinaryTree::printPreOrder(TreeNode *root) {
+void BinaryTree::printPreOrder(BinaryNode *root) {
 
 if(root == 0) return;
 std::cout<<root->data<<" ";
@@ -60,7 +60,7 @@ std::cout<<root->data<<" ";
 
 }
 //LDR
-void BinaryTree::printInOrder(TreeNode *root) {
+void BinaryTree::printInOrder(BinaryNode *root) {
 
 if(root == 0) return;
     printInOrder(root->left);
@@ -69,7 +69,7 @@ if(root == 0) return;
 
 }
 //LRD
-void BinaryTree::printPostOrder(TreeNode *root) {
+void BinaryTree::printPostOrder(BinaryNode *root) {
 
     if(root == 0) return;
     printPostOrder(root->left);
